@@ -29,6 +29,13 @@ body {
   border: 3px black solid;
 }
 
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 /* ======================================
 header
 ====================================== */
@@ -122,6 +129,29 @@ sidebar
 .sidebar {
   grid-column: 2/3;
   grid-row: 2/3;
+}
+.sidebar__item {
+  padding-bottom: 30px;
+}
+.sidebar__item__img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.sidebar__item__img img {
+  margin: auto;
+  width: 40%;
+  height: auto;
+  border-radius: 50%;
+}
+.sidebar__item__title {
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+  margin: 30px;
+}
+.sidebar__item__text {
+  text-align: center;
 }
 
 /* ======================================

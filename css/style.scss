@@ -2,7 +2,6 @@ $font-default: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothi
   "Yu Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $font-english: "Montserrat", sans-serif;
 
-
 /* ======================================
 common
 ====================================== */
@@ -32,6 +31,13 @@ body {
 
   section {
     border: 3px black solid;
+  }
+}
+
+ul {
+  padding: 0;
+  li {
+    list-style: none;
   }
 }
 /* ======================================
@@ -95,22 +101,21 @@ pickup
   &__item {
     list-style: none;
 
-    
     &__img {
       img {
         width: 100%;
         height: auto;
       }
     }
-    
-    &__text{
+
+    &__text {
       font-weight: 600;
       font-size: larger;
     }
 
     &__add {
-        text-align: center;
-        border-bottom: 1px gray solid;
+      text-align: center;
+      border-bottom: 1px gray solid;
     }
   }
 }
@@ -144,6 +149,31 @@ sidebar
 .sidebar {
   grid-column: 2/3;
   grid-row: 2/3;
+
+  &__item {
+    padding-bottom: 30px;
+    &__img {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      img {
+        margin: auto;
+        width: 40%;
+        height: auto;
+        border-radius: 50%;
+      }
+    }
+    &__title{
+      text-align: center;
+      font-size: large;
+      font-weight: 700;
+      margin: 30px;
+    }
+    &__text{
+      text-align: center;
+
+    }
+  }
 }
 
 /* ======================================
