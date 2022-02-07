@@ -152,10 +152,12 @@ sidebar
 
   &__item {
     padding-bottom: 30px;
+
     &__img {
       display: flex;
       justify-content: center;
       align-content: center;
+
       img {
         margin: auto;
         width: 40%;
@@ -163,23 +165,38 @@ sidebar
         border-radius: 50%;
       }
     }
+
     &__title{
       text-align: center;
       font-size: large;
       font-weight: 700;
       margin: 30px;
     }
+
     &__text{
       text-align: center;
     }
+
     &__article{
       margin: 40px 0px;
+
       &__img{
+
         img{
           width: 100%;
           height: auto;
         }
       }
+    }
+
+
+    &__dates{
+      border-bottom: 1px black solid;
+    }
+
+    &__date{
+      border-top: 1px black solid;
+      padding: 20px 30px;
     }
   }
 }
