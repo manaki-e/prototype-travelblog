@@ -121,7 +121,21 @@ main
 .main {
   grid-column: 1/2;
   grid-row: 2/3;
-  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-right: 30px;
+
+  &__article{
+    height: auto;
+    
+    &__img{
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 
 /* ======================================

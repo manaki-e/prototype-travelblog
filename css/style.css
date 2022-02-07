@@ -103,7 +103,17 @@ main
 .main {
   grid-column: 1/2;
   grid-row: 2/3;
-  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-right: 30px;
+}
+.main__article {
+  height: auto;
+}
+.main__article__img img {
+  width: 100%;
+  height: auto;
 }
 
 /* ======================================
