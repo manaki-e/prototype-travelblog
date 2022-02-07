@@ -153,6 +153,13 @@ sidebar
 .sidebar__item__text {
   text-align: center;
 }
+.sidebar__item__article {
+  margin: 40px 0px;
+}
+.sidebar__item__article__img img {
+  width: 100%;
+  height: auto;
+}
 
 /* ======================================
 footer
