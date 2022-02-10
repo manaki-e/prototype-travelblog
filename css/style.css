@@ -214,6 +214,11 @@ footer
   font-style: italic;
   cursor: pointer;
 }
+.footer__item .twitter {
+  height: 300px;
+  overflow: auto;
+  box-sizing: border-box;
+}
 .footer__last p {
   text-align: center;
   font-size: 10px;
