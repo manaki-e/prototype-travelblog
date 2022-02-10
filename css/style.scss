@@ -64,7 +64,7 @@ ul {
     border-bottom: $basic__border;
   }
 
-  .button {
+  &__button {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -76,35 +76,35 @@ ul {
     transition: all 0.3s;
     cursor: pointer;
     border-bottom: $basic__border;
-  }
 
-  .button::before,
-  .button::after {
-    position: absolute;
-    top: -2px;
-    right: -2px;
-    bottom: -2px;
-    left: -2px;
-    z-index: 2;
-    content: "";
-    transition: all 0.5s;
-  }
-  .button::before {
-    border-top: $hover__border;
-    border-bottom: $hover__border;
-    transform: scale(0, 1);
-  }
-  .button::after {
-    border-right: $hover__border;
-    border-left: $hover__border;
-    transform: scale(1, 0);
-  }
-  .button:hover {
-    color: #e291d1;
-  }
-  .button:hover::after,
-  .button:hover::before {
-    transform: scale(1);
+    &::before,
+    &::after {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      left: -2px;
+      z-index: 2;
+      content: "";
+      transition: all 0.5s;
+    }
+    &::before {
+      border-top: $hover__border;
+      border-bottom: $hover__border;
+      transform: scale(0, 1);
+    }
+    &::after {
+      border-right: $hover__border;
+      border-left: $hover__border;
+      transform: scale(1, 0);
+    }
+    &:hover {
+      color: #e291d1;
+    }
+    &:hover::after,
+    &:hover::before {
+      transform: scale(1);
+    }
   }
 }
 /* ======================================
@@ -322,8 +322,9 @@ footer
   }
 
   &__last {
-    p {
-      text-align: center;
+    text-align: center;
+
+    small {
       font-size: 10px;
       font-style: italic;
     }

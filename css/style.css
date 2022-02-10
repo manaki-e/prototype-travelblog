@@ -50,7 +50,7 @@ ul li {
   transform: translate(-50%);
   border-bottom: 1px solid black;
 }
-.readmore .button {
+.readmore__button {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -63,8 +63,7 @@ ul li {
   cursor: pointer;
   border-bottom: 1px solid black;
 }
-.readmore .button::before,
-.readmore .button::after {
+.readmore__button::before, .readmore__button::after {
   position: absolute;
   top: -2px;
   right: -2px;
@@ -74,21 +73,20 @@ ul li {
   content: "";
   transition: all 0.5s;
 }
-.readmore .button::before {
+.readmore__button::before {
   border-top: 2px solid #e291d1;
   border-bottom: 2px solid #e291d1;
   transform: scale(0, 1);
 }
-.readmore .button::after {
+.readmore__button::after {
   border-right: 2px solid #e291d1;
   border-left: 2px solid #e291d1;
   transform: scale(1, 0);
 }
-.readmore .button:hover {
+.readmore__button:hover {
   color: #e291d1;
 }
-.readmore .button:hover::after,
-.readmore .button:hover::before {
+.readmore__button:hover::after, .readmore__button:hover::before {
   transform: scale(1);
 }
 
@@ -275,8 +273,10 @@ footer
   overflow: auto;
   box-sizing: border-box;
 }
-.footer__last p {
+.footer__last {
   text-align: center;
+}
+.footer__last small {
   font-size: 10px;
   font-style: italic;
 }

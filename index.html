@@ -7,9 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>旅行blog</title>
+  <meta name="description" content="旅行ブログです。今までの旅行先をまとめました。">
   <link rel="icon" href="./img/favicon.ico">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 
 </head>
 
@@ -17,15 +18,15 @@
 
   <header class="header">
     <div class="header__logo inner">
-      <img src="./img/logo.svg" alt="">
+      <h1><img src="./img/logo.svg" alt="Travel Blog"></h1>
     </div>
     <nav class="header__nav">
       <ul class="header__nav__list inner">
-        <li class="header__nav__item"><a href="">NEW</a></li>
-        <li class="header__nav__item"><a href="">COLUMN</a></li>
-        <li class="header__nav__item"><a href="">SERIES</a></li>
-        <li class="header__nav__item"><a href="">Q&A</a></li>
-        <li class="header__nav__item"><a href="">CONTACT</a></li>
+        <li class="header__nav__item"><a href="#">NEW</a></li>
+        <li class="header__nav__item"><a href="#">COLUMN</a></li>
+        <li class="header__nav__item"><a href="#">SERIES</a></li>
+        <li class="header__nav__item"><a href="#">Q&A</a></li>
+        <li class="header__nav__item"><a href="#">CONTACT</a></li>
       </ul>
     </nav>
   </header>
@@ -40,7 +41,7 @@
           </div>
           <div class="pickup__item__text">テキストテキスト</div>
           <div class="readmore">
-            <span class="button">READ MORE</span>
+            <a href="#" class="readmore__button">READ MORE</a>
           </div>
         </li>
         <li class="pickup__item">
@@ -49,7 +50,7 @@
           </div>
           <div class="pickup__item__text">テキストテキスト</div>
           <div class="readmore">
-            <span class="button">READ MORE</span>
+            <a href="#" class="readmore__button">READ MORE</a>
           </div>
         </li>
         <li class="pickup__item">
@@ -58,7 +59,7 @@
           </div>
           <div class="pickup__item__text">テキストテキスト</div>
           <div class="readmore">
-            <span class="button">READ MORE</span>
+            <a href="#" class="readmore__button">READ MORE</a>
           </div>
         </li>
       </ul>
@@ -67,48 +68,48 @@
     <section class="main">
       <article class="main__article">
         <div class="main__article__title">タイトルテキストタイトルテキスト</div>
-        <div class="main__article__date">2021/01/01</div>
+        <time class="main__article__date">2021-01-01</time>
         <div class="main__article__img">
           <img src="./img/main1.jpg" alt="" width="1920" height="1080">
         </div>
         <div class="main__article__text">本文テキスト本文テキスト</div>
         <div class="readmore">
-          <span class="button">READ MORE</span>
+          <a href="#" class="readmore__button">READ MORE</a>
         </div>
       </article>
       <article class="main__article">
         <div class="main__article__title">タイトルテキストタイトルテキスト</div>
-        <div class="main__article__date">2021/01/01</div>
+        <time class="main__article__date">2021-01-01</time>
         <div class="main__article__img">
           <img src="./img/main2.jpg" alt="" width="1920" height="1080">
         </div>
         <div class="main__article__text">本文テキスト本文テキスト</div>
         <div class="readmore">
-          <span class="button">READ MORE</span>
+          <a href="#" class="readmore__button">READ MORE</a>
         </div>
       </article>
       <article class="main__article">
         <div class="main__article__title">タイトルテキストタイトルテキスト</div>
-        <div class="main__article__date">2021/01/01</div>
+        <time class="main__article__date">2021-01-01</time>
         <div class="main__article__img">
           <img src="./img/main3.jpg" alt="" width="1920" height="1080">
         </div>
         <div class="main__article__text">本文テキスト本文テキスト</div>
         <div class="readmore">
-          <span class="button">READ MORE</span>
+          <a href="#" class="readmore__button">READ MORE</a>
         </div>
       </article>
       <article class="main__article">
         <div class="main__article__title">タイトルテキストタイトルテキスト</div>
-        <div class="main__article__date">2021/01/01</div>
+        <time class="main__article__date">2021-01-01</time>
         <div class="main__article__img">
           <img src="./img/main4.jpg" alt="" width="1920" height="1080">
         </div>
         <div class="main__article__text">本文テキスト本文テキスト</div>
         <div class="readmore">
-          <span class="button">
+          <a href="#" class="readmore__button">
             READ MORE
-          </span>
+          </a>
         </div>
       </article>
     </section>
@@ -118,7 +119,7 @@
         <li class="sidebar__item">
           <ul>
             <li class="sidebar__item__img">
-              <img src="./img/author.jpg" alt="" height="640" width="640px">
+              <img src="./img/author.jpg" alt="" height="640" width="640">
             </li>
             <li class="sidebar__item__title">Name Name</li>
             <li class="sidebar__item__text">プロフィールテキスプロフィールトテキストプロフィールテキストプロフィールテキストプロフィールテキスト</li>
@@ -206,7 +207,7 @@
       </li>
     </ul>
     <div class="footer__last">
-      <p>© Travel & Blog</p>
+      <small lang="en">© Travel & Blog</small>
     </div>
   </footer>
 
