@@ -1,3 +1,12 @@
+$hover__border: 2px solid #e291d1;
+$basic__border: 1px solid black;
+
+@mixin inline__center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 $font-default: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "游ゴシック",
   "Yu Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $font-english: "Montserrat", sans-serif;
@@ -52,7 +61,7 @@ ul {
     content: "";
     width: 80px;
     transform: translate(-50%);
-    border-bottom: 1px black solid;
+    border-bottom: $basic__border;
   }
 
   .button {
@@ -66,7 +75,7 @@ ul {
     outline: none;
     transition: all 0.3s;
     cursor: pointer;
-    border-bottom: black 1px solid;
+    border-bottom: $basic__border;
   }
 
   .button::before,
@@ -81,13 +90,13 @@ ul {
     transition: all 0.5s;
   }
   .button::before {
-    border-top: 2px solid #e291d1;
-    border-bottom: 2px solid #e291d1;
+    border-top: $hover__border;
+    border-bottom: $hover__border;
     transform: scale(0, 1);
   }
   .button::after {
-    border-right: 2px solid #e291d1;
-    border-left: 2px solid #e291d1;
+    border-right: $hover__border;
+    border-left: $hover__border;
     transform: scale(1, 0);
   }
   .button:hover {
@@ -129,14 +138,12 @@ header
       width: 100%;
       height: 100%;
       cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-      &:hover{
+      @include inline__center;
+
+      &:hover {
         background-color: rgb(145, 143, 143);
-        
-        a{
+
+        a {
           color: rgb(113, 235, 235);
         }
       }
@@ -220,9 +227,7 @@ sidebar
     padding-bottom: 30px;
 
     &__img {
-      display: flex;
-      justify-content: center;
-      align-content: center;
+      @include inline__center;
 
       img {
         margin: auto;
@@ -256,11 +261,11 @@ sidebar
     }
 
     &__dates {
-      border-bottom: 1px black solid;
+      border-bottom: $basic__border;
     }
 
     &__date {
-      border-top: 1px black solid;
+      border-top: $basic__border;
       padding: 20px 30px;
       font-style: italic;
       cursor: pointer;
@@ -278,15 +283,13 @@ footer
   margin-top: 100px;
 
   &__list {
-    display: flex;
     gap: 50px;
-    justify-content: center;
     margin-bottom: 40px;
+    @include inline__center;
   }
 
   &__item {
     width: 350px;
-    // height: 400px;
 
     &__title {
       font-size: 16px;
@@ -301,11 +304,11 @@ footer
     }
 
     &__menus {
-      border-bottom: 1px black solid;
+      border-bottom: $basic__border;
     }
 
     &__menu {
-      border-top: 1px black solid;
+      border-top: $basic__border;
       padding: 13px 20px;
       font-style: italic;
       cursor: pointer;

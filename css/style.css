@@ -48,7 +48,7 @@ ul li {
   content: "";
   width: 80px;
   transform: translate(-50%);
-  border-bottom: 1px black solid;
+  border-bottom: 1px solid black;
 }
 .readmore .button {
   position: relative;
@@ -61,7 +61,7 @@ ul li {
   outline: none;
   transition: all 0.3s;
   cursor: pointer;
-  border-bottom: black 1px solid;
+  border-bottom: 1px solid black;
 }
 .readmore .button::before,
 .readmore .button::after {
@@ -123,7 +123,7 @@ header
   cursor: pointer;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 .header__nav__item:hover {
   background-color: #918f8f;
@@ -223,10 +223,10 @@ sidebar
   height: auto;
 }
 .sidebar__item__dates {
-  border-bottom: 1px black solid;
+  border-bottom: 1px solid black;
 }
 .sidebar__item__date {
-  border-top: 1px black solid;
+  border-top: 1px solid black;
   padding: 20px 30px;
   font-style: italic;
   cursor: pointer;
@@ -242,10 +242,11 @@ footer
   margin-top: 100px;
 }
 .footer__list {
-  display: flex;
   gap: 50px;
-  justify-content: center;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 .footer__item {
   width: 350px;
@@ -261,10 +262,10 @@ footer
   list-style: circle;
 }
 .footer__item__menus {
-  border-bottom: 1px black solid;
+  border-bottom: 1px solid black;
 }
 .footer__item__menu {
-  border-top: 1px black solid;
+  border-top: 1px solid black;
   padding: 13px 20px;
   font-style: italic;
   cursor: pointer;
