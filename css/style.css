@@ -33,6 +33,10 @@ ul li {
   list-style: none;
 }
 
+.readmore {
+  font-style: italic;
+}
+
 /* ======================================
 header
 ====================================== */
@@ -99,6 +103,7 @@ pickup
 .pickup__item__add {
   text-align: center;
   border-bottom: 1px gray solid;
+  font-style: italic;
 }
 
 /* ======================================
@@ -114,6 +119,10 @@ main
 }
 .main__article {
   height: auto;
+}
+.main__article__title {
+  font-weight: 800;
+  font-size: larger;
 }
 .main__article__img img {
   width: 100%;
@@ -145,6 +154,7 @@ sidebar
   text-align: center;
   font-size: large;
   font-weight: 700;
+  font-style: italic;
   margin: 30px;
 }
 .sidebar__item__text {
@@ -163,13 +173,15 @@ sidebar
 .sidebar__item__date {
   border-top: 1px black solid;
   padding: 20px 30px;
+  font-style: italic;
+  cursor: pointer;
 }
 
 /* ======================================
 footer
 ====================================== */
 .footer {
-  background-color: #a3a2a2;
+  background-color: #e7e1e1;
   padding-top: 60px;
   padding-bottom: 20px;
   margin-top: 100px;
@@ -200,6 +212,7 @@ footer
   border-top: 1px black solid;
   padding: 13px 20px;
   font-style: italic;
+  cursor: pointer;
 }
 .footer__last p {
   text-align: center;
