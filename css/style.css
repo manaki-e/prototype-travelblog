@@ -11,6 +11,7 @@ body {
 .inner {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0px 16px;
 }
 
 .title {
@@ -34,7 +35,61 @@ ul li {
 }
 
 .readmore {
-  font-style: italic;
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.readmore::before {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: "";
+  width: 80px;
+  transform: translate(-50%);
+  border-bottom: 1px black solid;
+}
+.readmore .button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  color: #141414;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-bottom: black 1px solid;
+}
+.readmore .button::before,
+.readmore .button::after {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  z-index: 2;
+  content: "";
+  transition: all 0.5s;
+}
+.readmore .button::before {
+  border-top: 2px solid #e291d1;
+  border-bottom: 2px solid #e291d1;
+  transform: scale(0, 1);
+}
+.readmore .button::after {
+  border-right: 2px solid #e291d1;
+  border-left: 2px solid #e291d1;
+  transform: scale(1, 0);
+}
+.readmore .button:hover {
+  color: #e291d1;
+}
+.readmore .button:hover::after,
+.readmore .button:hover::before {
+  transform: scale(1);
 }
 
 /* ======================================
@@ -99,11 +154,6 @@ pickup
 .pickup__item__text {
   font-weight: 600;
   font-size: larger;
-}
-.pickup__item__add {
-  text-align: center;
-  border-bottom: 1px gray solid;
-  font-style: italic;
 }
 
 /* ======================================
